@@ -20,7 +20,9 @@ import type {
   ButterflyEffectResponse
 } from '../types/race';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const rawApiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const cleanUrl = rawApiUrl.trim().replace(/\/+$/, '');
+const API_BASE_URL = cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
 
 export async function fetchRaces(year: number): Promise<RaceSummary[]> {
   const response = await fetch(`${API_BASE_URL}/races/${year}`);
