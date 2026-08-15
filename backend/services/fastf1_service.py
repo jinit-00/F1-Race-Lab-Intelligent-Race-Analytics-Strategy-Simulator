@@ -60,19 +60,22 @@ class FastF1Service:
             return FALLBACK_2024_RACES if year == 2024 else []
 
     def _load_session(self, year: int, round_num: int):
+        import gc
         cache_key = f"{year}_{round_num}"
         if cache_key in self._session_cache:
             return self._session_cache[cache_key]
 
+        # Limit cache size to 1 session to prevent RAM overflow on 512MB free tier
+        if len(self._session_cache) >= 1:
+            self._session_cache.clear()
+            gc.collect()
+
         try:
             session = fastf1.get_session(year, round_num, 'R')
-            try:
-                # First try full load with telemetry
-                session.load(laps=True, telemetry=True, weather=True)
-            except Exception:
-                # Fast fallback: load laps only if telemetry download times out or fails
-                session.load(laps=True, telemetry=False, weather=False)
+            # Load laps & weather without heavy full telemetry to keep RAM under 50MB
+            session.load(laps=True, telemetry=False, weather=True)
             self._session_cache[cache_key] = session
+            gc.collect()
             return session
         except Exception as e:
             raise RuntimeError(f"Failed to load session {year} round {round_num}: {str(e)}")
@@ -472,10 +475,15 @@ class FastF1Service:
                         "y": norm_cy
                     })
 
+            session_loc = session.event.get('Location', f"Round {round_num} Circuit")
+            import gc
+            del session, lap, telemetry, x_raw, y_raw, dist_raw, x_rot, y_rot
+            gc.collect()
+
             return {
                 "season": year,
                 "round_num": round_num,
-                "circuit_name": session.event.get('Location', f"Round {round_num} Circuit"),
+                "circuit_name": session_loc,
                 "geometry_source": "FastF1 Real Telemetry & Circuit Info",
                 "rotation_deg": rotation,
                 "points_count": len(points),
