@@ -10,16 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.31.0",
-    "plotly.js-dist-min": "^3.7.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-plotly.js": "^4.1.0",
-    "recharts": "^3.10.1",
-    "tailwind-merge": "^3.6.0"
-  },
-  "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^24.13.3",
     "@types/plotly.js-dist-min": "^2.3.4",
@@ -27,9 +17,18 @@
     "@types/react-dom": "^19.2.3",
     "@types/react-plotly.js": "^2.6.4",
     "@vitejs/plugin-react": "^6.0.4",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.31.0",
     "oxlint": "^1.75.0",
+    "plotly.js-dist-min": "^3.7.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-plotly.js": "^4.1.0",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
     "vite": "^8.2.0"
-  }
+  },
+  "devDependencies": {}
 }
