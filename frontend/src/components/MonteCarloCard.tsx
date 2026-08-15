@@ -129,7 +129,7 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
           <div className="flex items-center space-x-2">
             <Dices className="w-5 h-5 text-[#E10600]" />
             <span className="text-xs font-black uppercase tracking-widest text-[#E10600]">
-              STEP 7 — 🎲 MONTE CARLO RACE SIMULATION ENGINE
+              MONTE CARLO RACE SIMULATION ENGINE
             </span>
           </div>
           <h3 className="text-2xl font-black text-neutral-900 tracking-tight">
@@ -202,7 +202,7 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
               <div key={idx} className="flex items-center space-x-2">
                 <ChevronRight className="w-4 h-4 text-red-500" />
                 <div className="bg-neutral-800 px-3 py-1.5 rounded-xl border border-neutral-700">
-                  PIT {p.pit_num}: <strong className="text-red-400">Lap {p.pit_lap}</strong> ({p.compound_before} ➔ {p.compound_after})
+                  PIT {p.pit_num}: <strong className="text-red-400">Lap {p.pit_lap}</strong> ({p.compound_before}  {p.compound_after})
                 </div>
               </div>
             ))}
@@ -305,7 +305,7 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
             <Fuel className="w-5 h-5 text-amber-600 flex-shrink-0" />
             <div>
               <span className="text-[9px] font-black text-amber-700 uppercase block">ESTIMATED FUEL LOAD</span>
-              <strong className="text-amber-900 font-sans">110 kg ➔ 5 kg</strong>
+              <strong className="text-amber-900 font-sans">110 kg  5 kg</strong>
             </div>
           </div>
 
@@ -358,7 +358,7 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
         </div>
       )}
 
-      {/* ⭐ OPTIMAL PIT LAP & SIDE-BY-SIDE COMPARISON BANNER */}
+      {/*  OPTIMAL PIT LAP & SIDE-BY-SIDE COMPARISON BANNER */}
       {!isLoading && data && data.optimal_pit && (
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-6 rounded-3xl space-y-4 shadow-md">
@@ -366,7 +366,7 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
               <div className="flex items-center space-x-2">
                 <Sparkles className="w-5 h-5 text-amber-300 fill-current animate-pulse" />
                 <span className="text-xs font-black uppercase tracking-widest text-amber-200">
-                  ⭐ OPTIMAL SIMULATED PIT STRATEGY ({driver})
+                   OPTIMAL SIMULATED PIT STRATEGY ({driver})
                 </span>
               </div>
               <span className="text-2xl font-black font-mono text-white">
@@ -398,10 +398,10 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
             </div>
           </div>
 
-          {/* ADVANCED PLOTLY VISUALIZATIONS FOR STEP 7 (ENFORCING STRICT GRAPH LABELING) */}
+          {/* ADVANCED PLOTLY VISUALIZATIONS FOR (ENFORCING STRICT GRAPH LABELING) */}
           <div className="space-y-6">
             <span className="text-xs font-black uppercase text-neutral-700 tracking-wider block">
-              STEP 7 — FULL 11-PLOT MONTE CARLO ANALYTICS SUITE (LABEL COMPLIANT)
+              FULL 11-PLOT MONTE CARLO ANALYTICS SUITE (LABEL COMPLIANT)
             </span>
 
             {/* Row 1: A. Finish Position Distribution & B. Pit Lap -> Win Probability */}
@@ -620,7 +620,7 @@ export const MonteCarloCard: React.FC<MonteCarloCardProps> = ({
 
               <div className="bg-neutral-50 p-4 rounded-2xl border border-neutral-200">
                 <h4 className="text-xs font-black uppercase text-neutral-700 tracking-wider mb-2">
-                  J. Estimated Fuel Load vs Lap Time Pace (110 kg ➔ 5 kg)
+                  J. Estimated Fuel Load vs Lap Time Pace (110 kg  5 kg)
                 </h4>
                 <PlotlyPlot
                   data={[

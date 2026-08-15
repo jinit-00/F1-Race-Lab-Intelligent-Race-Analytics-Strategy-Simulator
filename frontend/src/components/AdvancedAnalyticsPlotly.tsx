@@ -83,7 +83,7 @@ export const AdvancedAnalyticsPlotly: React.FC<AdvancedAnalyticsPlotlyProps> = (
                 : 'text-neutral-600 hover:text-neutral-900'
             }`}
           >
-            Tire Analytics (Step 3)
+            Tire Analytics
           </button>
 
           <button
@@ -94,7 +94,7 @@ export const AdvancedAnalyticsPlotly: React.FC<AdvancedAnalyticsPlotlyProps> = (
                 : 'text-neutral-600 hover:text-neutral-900'
             }`}
           >
-            Lap Forecast (Step 4)
+            Lap Forecast
           </button>
 
           <button
@@ -105,12 +105,12 @@ export const AdvancedAnalyticsPlotly: React.FC<AdvancedAnalyticsPlotlyProps> = (
                 : 'text-neutral-600 hover:text-neutral-900'
             }`}
           >
-            Strategy Simulation (Step 5)
+            Strategy Simulation
           </button>
         </div>
       </div>
 
-      {/* TAB 1: TIRE ANALYTICS (Step 3) */}
+      {/* TAB 1: TIRE ANALYTICS */}
       {activeTab === 'tire' && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -237,7 +237,7 @@ export const AdvancedAnalyticsPlotly: React.FC<AdvancedAnalyticsPlotlyProps> = (
         </div>
       )}
 
-      {/* TAB 2: LAP FORECAST ANALYTICS (Step 4) */}
+      {/* TAB 2: LAP FORECAST ANALYTICS */}
       {activeTab === 'lap' && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -362,7 +362,7 @@ export const AdvancedAnalyticsPlotly: React.FC<AdvancedAnalyticsPlotlyProps> = (
         </div>
       )}
 
-      {/* TAB 3: STRATEGY ANALYTICS (Step 5) */}
+      {/* TAB 3: STRATEGY ANALYTICS */}
       {activeTab === 'strategy' && (
         <div className="space-y-6">
           {simResult ? (
@@ -446,7 +446,7 @@ export const AdvancedAnalyticsPlotly: React.FC<AdvancedAnalyticsPlotlyProps> = (
           {/* Strategy Performance Surface */}
           <div className="bg-white p-4 rounded-2xl border border-neutral-200 space-y-2">
             <h3 className="text-xs font-extrabold uppercase text-neutral-800 tracking-wider">
-              3. Strategy Performance Surface (Pit Lap × New Compound ➔ Predicted Time Delta)
+              3. Strategy Performance Surface (Pit Lap × New Compound  Predicted Time Delta)
             </h3>
             <Plot
               data={[

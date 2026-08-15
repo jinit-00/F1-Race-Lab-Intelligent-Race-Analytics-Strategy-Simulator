@@ -394,7 +394,7 @@ export const CircuitTrackMap: React.FC<CircuitTrackMapProps> = ({
               );
             })}
 
-            {/* ⭐ GHOST CAR MARKER */}
+            {/*  GHOST CAR MARKER */}
             {ghostDriver && (
               <g className="transition-all duration-500 animate-pulse">
                 {(() => {

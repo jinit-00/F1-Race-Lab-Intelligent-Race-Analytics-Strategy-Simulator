@@ -13,7 +13,7 @@ export const RaceHeader: React.FC<RaceHeaderProps> = ({ raceInfo }) => {
         {/* Branding & Logo */}
         <div className="flex items-center space-x-4">
           <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#E10600] text-white font-bold text-lg shadow-[0_4px_12px_rgba(225,6,0,0.3)]">
-            🏎
+            
           </div>
           <div>
             <div className="flex items-center space-x-2">

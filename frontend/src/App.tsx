@@ -171,7 +171,7 @@ export const App: React.FC = () => {
           <div className="flex space-x-1 py-2">
             {[
               { id: 'dashboard', label: 'Main Dashboard', icon: LayoutDashboard },
-              { id: 'ghost_race', label: '⭐ Ghost Race', icon: Sparkles },
+              { id: 'ghost_race', label: ' Ghost Race', icon: Sparkles },
               { id: 'replay_track', label: 'Circuit Telemetry', icon: Flag },
               { id: 'pit_simulator', label: 'Strategy Simulator', icon: Zap },
               { id: 'monte_carlo', label: 'Monte Carlo', icon: Cpu },
@@ -343,7 +343,7 @@ export const App: React.FC = () => {
               </div>
             )}
 
-            {/* TAB 2: ⭐ GHOST RACE SIGNATURE FEATURE */}
+            {/* TAB 2:  GHOST RACE SIGNATURE FEATURE */}
             {activeTab === 'ghost_race' && selectedDriver && (
               <GhostRaceCard
                 season={season}

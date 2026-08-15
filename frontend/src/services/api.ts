@@ -54,7 +54,7 @@ export async function fetchLaps(year: number, round: number): Promise<LapData[]>
   return response.json();
 }
 
-// Step 3 ML API
+// ML API
 export async function predictTireDegradation(
   req: DegradationPredictionRequest
 ): Promise<DegradationPredictionResponse> {
@@ -69,7 +69,7 @@ export async function predictTireDegradation(
   return response.json();
 }
 
-// Step 4 ML API
+// ML API
 export async function predictNextLapTime(
   req: LapTimePredictionRequest
 ): Promise<LapTimePredictionResponse> {
@@ -84,7 +84,7 @@ export async function predictNextLapTime(
   return response.json();
 }
 
-// Step 5 Simulation API
+// Simulation API
 export async function simulatePitStop(
   req: PitSimulationRequest
 ): Promise<PitSimulationResponse> {
@@ -99,7 +99,7 @@ export async function simulatePitStop(
   return response.json();
 }
 
-// Step 6: What-If Comparison API
+// What-If Comparison API
 export async function fetchWhatIfComparison(
   req: WhatIfComparisonRequest
 ): Promise<WhatIfComparisonResponse> {
@@ -114,7 +114,7 @@ export async function fetchWhatIfComparison(
   return response.json();
 }
 
-// Step 7: Monte Carlo Simulation API
+// Monte Carlo Simulation API
 export async function fetchMonteCarloSimulation(
   req: MonteCarloRequest
 ): Promise<MonteCarloResponse> {
@@ -129,7 +129,7 @@ export async function fetchMonteCarloSimulation(
   return response.json();
 }
 
-// Step 8: Strategy Comparison API
+// Strategy Comparison API
 export async function fetchStrategyComparison(
   req: StrategyComparisonRequest
 ): Promise<StrategyComparisonResponse> {
@@ -144,7 +144,7 @@ export async function fetchStrategyComparison(
   return response.json();
 }
 
-// Step 9: Butterfly Effect API
+// Butterfly Effect API
 export async function fetchButterflyAnalysis(
   year: number,
   round: number,

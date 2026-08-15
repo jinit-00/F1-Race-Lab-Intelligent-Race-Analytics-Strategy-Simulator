@@ -71,7 +71,7 @@ export const PitSimulatorCard: React.FC<PitSimulatorCardProps> = ({
           </div>
           <div>
             <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#E10600] block">
-              STEP 5 — PIT STOP STRATEGY SIMULATOR
+              PIT STOP STRATEGY SIMULATOR
             </span>
             <h2 className="text-base font-extrabold text-neutral-900">
               What-If Pit Strategy Simulator

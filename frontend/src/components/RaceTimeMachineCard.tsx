@@ -89,7 +89,7 @@ export const RaceTimeMachineCard: React.FC<RaceTimeMachineCardProps> = ({
           <div className="flex items-center space-x-2">
             <History className="w-6 h-6 text-red-500 animate-spin" style={{ animationDuration: '8s' }} />
             <span className="text-xs font-black uppercase tracking-widest text-red-500">
-              FLAGSHIP FEATURE — ⭐ RACE TIME MACHINE
+              FLAGSHIP FEATURE —  RACE TIME MACHINE
             </span>
           </div>
           <h2 className="text-3xl font-black text-white tracking-tight">

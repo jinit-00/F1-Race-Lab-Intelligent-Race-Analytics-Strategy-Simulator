@@ -71,7 +71,7 @@ export const ButterflyEffectCard: React.FC<ButterflyEffectCardProps> = ({
           <div className="flex items-center space-x-2">
             <Sparkles className="w-5 h-5 text-[#E10600] animate-pulse" />
             <span className="text-xs font-black uppercase tracking-widest text-[#E10600]">
-              STEP 9 — THE BUTTERFLY EFFECT (SIGNATURE CENTERPIECE)
+              THE BUTTERFLY EFFECT (SIGNATURE CENTERPIECE)
             </span>
           </div>
           <h3 className="text-2xl font-black text-neutral-900 tracking-tight">

@@ -78,7 +78,7 @@ export const WhatIfComparisonCard: React.FC<WhatIfComparisonCardProps> = ({
           <div className="flex items-center space-x-2">
             <GitCompare className="w-5 h-5 text-[#E10600]" />
             <span className="text-xs font-black uppercase tracking-widest text-[#E10600]">
-              STEP 6 — FULL WHAT-IF RACE COMPARISON
+              FULL WHAT-IF RACE COMPARISON
             </span>
           </div>
           <h3 className="text-xl font-black text-neutral-900 tracking-tight">

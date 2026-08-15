@@ -65,7 +65,7 @@ export const NextLapPredictionCard: React.FC<NextLapPredictionCardProps> = ({
           </div>
           <div>
             <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#E10600] block">
-              STEP 4 — ML LAP TIME PREDICTION MODEL
+              ML LAP TIME PREDICTION MODEL
             </span>
             <h2 className="text-base font-extrabold text-neutral-900">
               Next Lap Pace Forecaster

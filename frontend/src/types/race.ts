@@ -48,7 +48,7 @@ export interface DriverStanding {
 
 export type ReplaySpeed = 1 | 2 | 5 | 10;
 
-// Step 3: Tire Degradation Types
+// Tire Degradation Types
 export interface DegradationPredictionRequest {
   driver: string;
   compound: string;
@@ -64,7 +64,7 @@ export interface DegradationPredictionResponse {
   tyre_age: number;
 }
 
-// Step 4: Next Lap Time Prediction Types
+// Next Lap Time Prediction Types
 export interface LapTimePredictionRequest {
   driver: string;
   circuit?: string;
@@ -80,7 +80,7 @@ export interface LapTimePredictionResponse {
   expected_change: number;
 }
 
-// Step 5: Pit Stop Simulation Types
+// Pit Stop Simulation Types
 export interface PitSimulationRequest {
   season: number;
   round_num: number;
@@ -138,7 +138,7 @@ export interface VisualizationDatasets {
   sample_laps: LapData[];
 }
 
-// Step 6: What-If Comparison Types
+// What-If Comparison Types
 export interface WhatIfComparisonRequest {
   season: number;
   round_num: number;
@@ -182,7 +182,7 @@ export interface WhatIfComparisonResponse {
   trajectory: WhatIfTrajectoryPoint[];
 }
 
-// Step 7: Monte Carlo Simulation Types
+// Monte Carlo Simulation Types
 export interface MonteCarloRequest {
   season: number;
   round_num: number;
@@ -217,7 +217,7 @@ export interface MonteCarloResponse {
   };
 }
 
-// Step 8: Strategy Comparison Types
+// Strategy Comparison Types
 export interface StrategyDefinition {
   name: string;
   starting_compound?: string;
@@ -261,7 +261,7 @@ export interface StrategyComparisonResponse {
   };
 }
 
-// Step 9: Butterfly Effect Types
+// Butterfly Effect Types
 export interface PitLapPoint {
   pit_lap: number;
   finish_position: string;

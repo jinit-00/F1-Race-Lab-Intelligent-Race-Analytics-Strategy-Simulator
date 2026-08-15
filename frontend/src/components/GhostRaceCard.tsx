@@ -206,7 +206,7 @@ export const GhostRaceCard: React.FC<GhostRaceCardProps> = ({
                 <span>Strategy Diverged at Lap {ghostData?.divergence_lap || 38}</span>
               </div>
               <p className="font-medium text-amber-700">
-                REAL: Stay Out | GHOST: Pit ➔ {compound}
+                REAL: Stay Out | GHOST: Pit  {compound}
               </p>
             </div>
 
@@ -225,7 +225,7 @@ export const GhostRaceCard: React.FC<GhostRaceCardProps> = ({
                 <span className="text-[10px] font-black uppercase text-amber-700">GHOST CAR</span>
                 <div className="text-xl font-black text-amber-600">{ghostData?.ghost_car.finish_position || 'P3'}</div>
                 <div className="text-xs font-bold text-amber-800">Simulated Alternate</div>
-                <div className="text-[10px] font-mono text-amber-700">Pit L{pitLap} ➔ {compound}</div>
+                <div className="text-[10px] font-mono text-amber-700">Pit L{pitLap}  {compound}</div>
               </div>
             </div>
 

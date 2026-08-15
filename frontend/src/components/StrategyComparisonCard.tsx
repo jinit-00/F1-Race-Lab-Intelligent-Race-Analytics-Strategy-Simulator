@@ -98,7 +98,7 @@ export const StrategyComparisonCard: React.FC<StrategyComparisonCardProps> = ({
           <div className="flex items-center space-x-2">
             <Flag className="w-5 h-5 text-[#E10600]" />
             <span className="text-xs font-black uppercase tracking-widest text-[#E10600]">
-              STEP 8 — STRATEGY COMPARISON & OPTIMIZATION
+              STRATEGY COMPARISON & OPTIMIZATION
             </span>
           </div>
           <h3 className="text-xl font-black text-neutral-900 tracking-tight">
@@ -234,7 +234,7 @@ export const StrategyComparisonCard: React.FC<StrategyComparisonCardProps> = ({
 
                   <div className="text-[11px] text-neutral-600 font-semibold space-y-1">
                     <div>Expected Position: <strong className="text-neutral-900">P{st.expected_position}</strong></div>
-                    <div>Stint Timeline: <strong className="text-neutral-900">{st.starting_compound} ({st.pit_lap} Laps) ➔ {st.new_compound}</strong></div>
+                    <div>Stint Timeline: <strong className="text-neutral-900">{st.starting_compound} ({st.pit_lap} Laps)  {st.new_compound}</strong></div>
                   </div>
                 </div>
               ))}

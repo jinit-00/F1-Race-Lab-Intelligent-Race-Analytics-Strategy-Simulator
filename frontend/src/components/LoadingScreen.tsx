@@ -17,7 +17,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({
         {/* F1 Logo & Header */}
         <div className="flex flex-col items-center space-y-2">
           <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-[#E10600] text-white font-black text-xl shadow-[0_4px_12px_rgba(225,6,0,0.3)]">
-            🏎
+            
           </div>
           <h2 className="text-2xl font-black font-sans tracking-tight text-neutral-900 uppercase mt-2">
             F1 RACE LAB
