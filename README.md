@@ -124,12 +124,7 @@ f1-race-lab/
 
 ---
 
-## 🏆 Why F1 Race Lab Stands Out for Hackathon Judges
 
-1. **Authentic Domain Data**: Direct integration with official F1 timing & telemetry data via **FastF1**.
-2. **Real Physics & Geometry**: No simplified ovals or decorative track loops—every curve, straight, and chicane is rendered from actual telemetry.
-3. **Interactive Counterfactual Analytics**: Allows engineers to answer *"What If?"* questions in real-time.
-4. **Professional UI/UX**: Designed around modern Light Motorsport telemetry dashboards used by real strategy teams.
 
 ---
 
